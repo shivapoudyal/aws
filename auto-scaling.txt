@@ -5,7 +5,7 @@
 
 2) AUTO-SCALING POLICY -> there are 2 types of auto scaling policies -> (i) Manual Policy, (ii) Dynamic Policy
 
-  * Dynamic Policy -> 3 Types of Dynamic Policies -> (a) Target Tracking Policy, (b) Simple Scaling Policy, (c) Step Scaling Policy
+  * Dynamic Policy -> 3 Types of Dynamic Policies -> (a) Target Tracking Policy, (b) Simple Scaling Policy, (c) Step Scaling Policy, (d) Cyclic/Schedule Scaling Policies
 
     * (a) Target Tracking Policy -> here we define the average of CPU UTILIZATION, eg -> 70% UTILIZATION (stability) defined and we have 4 EC2 instances, it means now CPU UTILIZATION can't exceed more than 70%, if this happens it will create a new EC2 instance and maintain the defined 70% of UTILIZATION, same if EC2 instances UTILIZATION descrease than 70%, it will delete other instances and make it maintain for 70%.
     * (b) Simple Scaling Policy  -> here we define the numbers of EC2 instances ( MIN & MAX no. ) as per CPU UTILIZATION, eg -> we say ADD 2 more instances if 80% of UTILIZATION exceed, so it will ADD 2 more instances after defined UTILIZATION wheather it requires only 1, but it will create 2 instances as we defined as 2, and same it will not cross the max no. of instances as well, if we defined 10 max instances then at any condition it will not cross that no of instances.
