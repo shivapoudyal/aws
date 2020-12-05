@@ -17,3 +17,5 @@
 ********************************************************************** LAB ********************************************************************************
 
 1) LAUNCH CONFIGURATION = (Auto Scaling->Lauch Configuration) Very first need to create Lauch Configuration, here we mention what types of EC2-instances we got to add while auto-scaling works.
+
+2) CREATE AUTO SCALING GROUP = (Auto Scaling->Auto Scaling Groups) and now create ASG with select the created Configuration.
