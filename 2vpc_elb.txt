@@ -9,7 +9,7 @@ Important :- Read the Note before creating VPC.
     a) route to - internet gateway, peering connection (put IP of other connected vpc cidr)
     b) need to route (peering with each other CIDR) with both of VPC's route
 
-5) Create ELB -> while creating TARGET GROUP, there is option of TARGET TYPE select IP there, put
+5) Create ELB -> while creating TARGET GROUP, there is option of TARGET TYPE select IP there
 6) Register Targets in TG: 
     a) There will be one main Network VPC (selected), put the private IPs of instance machine, whose gonna be targeted for ELB and click to "Add to List" Button. 
     b) For other VPC, select "other private IP address" in Network and put the other VPC instance machine private IP.   
