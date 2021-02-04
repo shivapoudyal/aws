@@ -1,5 +1,0 @@
-1) Creating Network
-    sudo docker network create any-network-name
-
-2) List Networks
-    sudo docker network ls    

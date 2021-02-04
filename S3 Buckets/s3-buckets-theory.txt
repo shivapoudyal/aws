@@ -21,10 +21,10 @@
     i) eg. there is data which we can transfer to other S3 service ie. GLACIER, S3-IA into a specific time (eg after 30 days, 90 days).
 
 2)  WEBSITE 
-    i) a static website can hosted into S3 Bucket.    
+    i) a static website can be hosted into S3 Bucket.    
 
 3)  VERSIONING
-    i)   keeps object versions as it changes (it keeps the latest file into bucket, but while open it there will a list of file uploaded times as defferent versions of it) .
+    i)   keeps object history as it changes (it keeps the latest file into bucket, but while open it, there will a list of file uploaded times as defferent versions of it) .
     ii)  versioning can't be DISABLED , it can be ENABLED OR SUSPENDED (*imp.) 
 
 4) ACCESS CONTROL LIST (POLICIES)
