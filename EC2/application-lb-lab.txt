@@ -1,0 +1,15 @@
+* LOAD BALANCER WORK UPON AVAILABILITY ZONES, ATLEAST 2 SUBNETS SHOULD BE SELECTED FOR CREATING LB.
+ 
+* TAGET GROUP :- IT IS A GROUP OF TARGETS (EC2 INSTANCES) WHERE LOAD WILL BE DISTRIBUTES.
+
+
+1) (Go to => Load Balancing -> Load Balancer) Configure Load Balancer => choose Application Load Balancer, Specify a LB name, add listner (HTTP/HTTPS)
+2) Select Availability Zones = only selected AZ's EC2 instances will be targetted as Load Balancer instances (for ref. check Availability Zones of created instances).
+3) Select Configure Security Group
+4) Configure Routing => Here, we Specify the taget group names etc.
+5) Register Targets => Add Targets (EC2 instances) where loads will be distributes.
+    Now, load Balancer is created.
+
+*ADD/REMOVE INSTANCES/AZs AFTER LOAD BALANCER CREATED.
+    i)  For adding instances => go to > taget group -> tagets -> edit the instances (remove / add).
+    ii) For adding AZs => go to > load balancer -> Edit subnets -> now check/uncheck the AZs.
